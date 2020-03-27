@@ -4,5 +4,5 @@ This project uses [drake](https://github.com/ropensci/drake).
 
 See:
 
- - /_drake.R
- - /plan.R
+ - [/_drake.R](/_drake.R)
+ - [/plan.R](/plan.R)
