@@ -12,25 +12,55 @@ d <- rename(d, district = "district-name",
 d <- d %>% 
   arrange(state, district)
 
+detector <- function(x) {
+  str_detect(x, "closed") |
+    str_detect(x, "closure") |
+    str_detect(x, "coron*") |
+    str_detect(x, "covid*")
+}
+
 access_site <- function(name, state, id, url) {
   
   h <- url %>% 
     read_html()
   
+  write_xml(h, str_c("xml-data/", state, "-", name, "-", id, "-", Sys.Date(), ".xml"))
+  
   t <- h %>% 
     html_text()
   
-  write_xml(h, str_c("xml-data/", state, "-", name, "-", id, "-", url, ".xml"))
+  links <- h %>% 
+    html_nodes("a")
   
-  closed <- str_detect(tolower(t), "clos*")
+  closed <- str_detect(tolower(t), "closed")
+  closure <- str_detect(tolower(t), "closure")
   corona <- str_detect(tolower(t), "corona*")
   covid <- str_detect(tolower(t), "covid*")
   
-  tibble(district_name = name, state = state, nces_id = id, url = url, closed = closed, corona = corona, covid = covid, scraping_failed = FALSE, content = t)
-  print(str_c("Processed ", name, " (", state, ") --- closed = ", closed, "; corona = ", corona, "; covid = ", covid))
-}
+  link_found <- links %>% 
+    html_text() %>% 
+    tolower() %>% 
+    detector() %>% 
+    any()
+  
+  link_logical_to_index <- links %>% 
+    html_text() %>%
+    tolower() %>%
+    detector()
 
-# access_site(NA, NA, NA, 'https://denairusd.org')
+  link_urls <- links %>%
+    rvest::html_attr("href") %>% 
+    str_c(url, .)
+
+  link_urls <- link_urls[link_logical_to_index]
+  
+  print(str_c("Processed ", name, " (", state, ") --- closed = ", closed, "; closure = ", closure, "; corona = ", corona, "; covid = ", covid, "; LINK FOUND: ", link_found))
+  #print(link_urls)
+  
+  tibble(district_name = name, state = state, nces_id = id, url = url, closed = closed, closure = closure, corona = corona, covid = covid, scraping_failed = FALSE, 
+         link_found = link_found, link = list(link_urls))
+  
+}
 
 output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$website_url), 
                possibly(access_site, 
@@ -42,6 +72,7 @@ output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$
                                            corona = NA,
                                            covid = NA,
                                            scraping_failed = TRUE, 
-                                           content = NA)))
+                                           link_found = NA,
+                                           link = NA)))
 
-# output <- map_df(output, ~.)
+output_df <- map_df(output, ~.)

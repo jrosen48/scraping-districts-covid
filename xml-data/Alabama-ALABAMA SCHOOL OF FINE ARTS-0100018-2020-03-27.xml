@@ -1,0 +1,1633 @@
+<!DOCTYPE HTML>
+<!-- w4a --><html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Alabama School of Fine Arts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="description" content="Alabama School of Fine Arts">
+<style>
+				a:focus, a:active, input:focus, input:active, select:focus, select:active {
+				  outline: 2px dotted #3091ff!important;
+				  outline: 5px auto -webkit-focus-ring-color!important;
+				}
+			</style>
+<script>
+				var jAriaOnLoadCallbacks = [];
+			</script><meta name="generator" content="SchoolSitePro">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/apps/shared/main-pack.css" type="text/css">
+<link rel="stylesheet" href="/shared/main.css" type="text/css">
+<link rel="stylesheet" href="/apps/shared/web_apps-pack.css" type="text/css">
+<script type="text/javascript">
+			var Common = {
+				donationsPopup : 0	
+			};
+			
+			
+				function getId(a){return document.getElementById(a)}function MM_swapImage(){var e,d=0,b,c=MM_swapImage.arguments;document.MM_sr=new Array;for(e=0;e<(c.length-2);e+=3){if((b=MM_findObj(c[e]))!=null){document.MM_sr[d++]=b;if(!b.oSrc){b.oSrc=b.src}b.src=c[e+2]}}}function P7_autoLayers(){var m,c,e,n,l=P7_autoLayers.arguments;var d=parseInt(l[0]);if(isNaN(d)){d=0}if(!document.p7setc){p7c=new Array();document.p7setc=true;for(var h=0;h<10;h++){p7c[h]=new Array()}}for(e=0;e<p7c[d].length;e++){if((m=MM_findObj(p7c[d][e]))!=null){c=(document.layers)?m:m.style;c.visibility="hidden"}}for(e=1;e<l.length;e++){if((m=MM_findObj(l[e]))!=null){c=(document.layers)?m:m.style;c.visibility="visible";n=false;for(j=0;j<p7c[d].length;j++){if(l[e]==p7c[d][j]){n=true}}if(!n){p7c[d][p7c[d].length++]=l[e]}}}}function MM_preloadImages(){var f=document;if(f.images){if(!f.MM_p){f.MM_p=new Array()}var e,c=f.MM_p.length,b=MM_preloadImages.arguments;for(e=0;e<b.length;e++){if(b[e].indexOf("#")!=0){f.MM_p[c]=new Image;f.MM_p[c++].src=b[e]}}}}function MM_swapImgRestore(){var d,b,c=document.MM_sr;for(d=0;c&&d<c.length&&(b=c[d])&&b.oSrc;d++){b.src=b.oSrc}}function MM_findObj(f,e){var c,b,a;if(!e){e=document}if((c=f.indexOf("?"))>0&&parent.frames.length){e=parent.frames[f.substring(c+1)].document;f=f.substring(0,c)}if(!(a=e[f])&&e.all){a=e.all[f]}for(b=0;!a&&b<e.forms.length;b++){a=e.forms[b][f]}for(b=0;!a&&e.layers&&b<e.layers.length;b++){a=MM_findObj(f,e.layers[b].document)}if(!a&&e.getElementById){a=e.getElementById(f)}return a}function popup(b,d,c,a){popWindow(b,d,c,a)}function popWindow(b,d,c,a){if(!startNewWindow(b,d,c,a)){alert("Ooops\n\nYou seem to have a popup blocker. Please disable it to see the page!")}}function startNewWindow(b,f,d,a){var e=document.location.host;e=e.replace(/./g,"");this.name=e+"Main";var c=window.open(b,f,"menubar=no,scrollbars=yes,width="+d+",height="+a+",resizable=1,status=yes");if(c==null){return false}return true}function openVideoWindow(a){var b=open(a,"VideoWindow","width=320,height=320,screenX=0,screenY=0");if(b=null){alert("Ooops\n\nYou seem to have a popup blocker. Please disable it to see the video!")}}function openFlashVideo(b,c,a){if(c==null||c==""){c=320}if(a==null||a==""){a=283}var d=open("/apps/videos/flash_popup.jsp?f="+b,"VideoWindow","width="+c+",height="+a+",screenX=0,screenY=0");if(d=null){alert("Ooops\n\nYou seem to have a popup blocker. Please disable it to see the video!")}}function donate(){var a=document.location.host;if(a.indexOf(":")>0){a=a.substring(0,a.indexOf(":"))}if(window.Common&&Common.donationsPopup==1){var b=startNewWindow("/apps/s/donations/index.jsp?h="+a,"SecureDonations",700,480);if(!b){alert("You seem to have a popup blocker. We will continue in the main browser window.");window.location.href="/apps/s/donations/index.jsp?h="+a}}else{window.location.href="/apps/s/donations/index.jsp?h="+a}}function getRN(){return Math.round(Math.random()*10000000)}function proxyKiller(){var f=getRN();var g=document.location.host;var b=document.getElementsByTagName("a");for(i=0;i<b.length;i++){var e=b[i].href;if(e.indexOf("javascript")<0&&e.indexOf("mailto")<0&&e.indexOf("&rn=")<0&&e.indexOf("?rn=")<0&&e.indexOf("#")<0&&(e.indexOf("http://"+g)==0||e.indexOf("https://secure.educationalnetworks.")==0)){var c=b[i].innerHTML;if(e.indexOf("?")>=0){b[i].href+="&rn="+f}else{b[i].href+="?rn="+f}if(b[i].innerHTML!=c){b[i].innerHTML=c}}}}function trimString(b){if(typeof b!="string"){return b}var a=b;var d=a.substring(0,1);while(d==" "||d=="\n"||d=="\r"||d=="\t"){a=a.substring(1,a.length);d=a.substring(0,1)}d=a.substring(a.length-1,a.length);while(d==" "||d=="\n"||d=="\r"||d=="\t"){a=a.substring(0,a.length-1);d=a.substring(a.length-1,a.length)}return a}function validatePositiveInteger(b){if(b==null||b==""){return false}var a="0123456789";for(i=0;i<b.length;i++){if(a.indexOf(b.charAt(i))<0){return false}}return true}function validateDollarAmount(c){if(c==null||c==""){return false}var b="0123456789.";var a=0;for(i=0;i<c.length;i++){if(c.charAt(i)=="."){a++}if(b.indexOf(c.charAt(i))<0){return false}}if(a>1||(a==1&&c.indexOf(".")!=c.length-3)){return false}return true}function rotatePics(c,e,a){var b=getId(c);if(b!=null){var d;do{d="/pics/"+c+"/"+Math.floor(Math.random()*e)+".jpg"}while(b.src.indexOf(d)>=0);b.src=d;setTimeout('rotatePics("'+c+'",'+e+","+a+")",a)}}function toUTF8(a){if(a==null){return a}for(i=0;i<a.length;i++){if(a.charCodeAt(i)>126){var b="&#"+a.charCodeAt(i)+";";a=a.substring(0,i)+b+a.substring(i+1,a.length)}}return a}function setCookie(b,c,a){if(a!=null&&a!=""){document.cookie=b+"="+escape(c)+"; path=/; expires="+a}else{document.cookie=b+"="+escape(c)+"; path=/;"}}function getCookie(d){var b=document.cookie.split("; ");for(var c=0;c<b.length;c++){var a=b[c].split("=");if(d==a[0]){return unescape(a[1])}}return null}function delCookie(a){document.cookie=a+"=x ; expires=Fri, 31 Dec 1999 23:59:59 GMT;"}function onEnter(e,callback){var characterCode;if(e&&e.which){characterCode=e.which}else{e=window.event;try{characterCode=e.keyCode}catch(ex){characterCode=-1}}if(characterCode==13){eval(callback);return false}else{return true}}function CommonIsLoaded(){return true};
+			
+		</script><!--[if lt IE 9]>
+				<script src="/apps/shared/html5shiv.min.js"></script>
+			<![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-79847206-1"></script><script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-79847206-1');
+		</script>
+</head>
+<!-- Conditional classes for IE --><!--[if lt IE 7]> <body class="ie6 oldie" lang="en"> <![endif]--><!--[if IE 7]>    <body class="ie7 oldie" lang="en"> <![endif]--><!--[if IE 8]>    <body class="ie8 oldie" lang="en"> <![endif]--><!--[if gt IE 8]><!--><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF32TD4');</script><!-- End Google Tag Manager --><link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700" rel="stylesheet">
+<!-- Event snippet for Website click conversions conversion page --><script>
+  gtag('event', 'conversion', {'send_to': 'AW-822001744/CTAYCMzEs4oBENCA-4cD'});
+</script><script> 
+function tabs(selectedtab) {    
+    // contents
+    var s_tab_content = "tab_content_" + selectedtab;   
+    var contents = document.getElementsByTagName("div");
+    for(var x=0; x<contents.length; x++) {
+        name = contents[x].getAttribute("name");
+        if (name == 'tab_content') {
+            if (contents[x].id == s_tab_content) {
+            contents[x].style.opacity = "1";
+			 contents[x].style.height = "auto"; 
+            } else {
+            contents[x].style.opacity = "0";
+			 contents[x].style.height = "0";
+            }
+        } 
+    }   
+    // tabs
+    var s_tab = "tab_" + selectedtab;       
+    var tabs = document.getElementsByTagName("a");
+    for(var x=0; x<tabs.length; x++) {
+        name = tabs[x].getAttribute("name");
+        if (name == 'tab') {
+            if (tabs[x].id == s_tab) {
+            tabs[x].className = "active";                       
+            } else {
+            tabs[x].className = "";
+            }
+        }
+    }     
+}
+</script><body class=""> 
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		 n.queue=[];t=b.createElement(e);t.async=!0;
+		 t.src=v;s=b.getElementsByTagName(e)[0];
+		 s.parentNode.insertBefore(t,s)}(window,document,'script',
+										 'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '363323837377637'); 
+		fbq('track', 'PageView');
+	</script><noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=363323837377637&amp;ev=PageView%0A&amp;noscript=1">
+</noscript>
+	<!-- End Facebook Pixel Code -->
+	
+<!--<![endif]-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF32TD4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	
+<div id="wrapper-index">
+<div id="header-wrapper">
+  <div id="top" class="cf">
+    <div id="inner">
+      <div id="quicklink" class="png-bg">
+        <h2 class="ir">Quick Links</h2>
+        <ul>
+<!-- <li class="realfirst"><a href="https://secure.infosnap.com/family/gosnap.aspx?action=16069&culture=en" target="_blank">Apply Now!</a></li> --><li class="first"><a href="/student-life/">student life</a></li>
+          <li class="second"><a href="/parents/"> parents</a></li>
+          <li class="third"><a href="/calendars/">calendars</a></li>
+			
+			<li class="fourth">
+<a href="/keep-in-touch/">Keep In Touch</a>
+			</li>
+<li class="last"><a href="/apps/pages/index.jsp?uREC_ID=202400&amp;type=d">Staff Only</a></li>
+        </ul>
+</div>
+      <div id="tabs">
+		  
+        <div id="login"> <a class="ir" id="click" href="javascript:;">Login</a>
+          <div id="form">
+            
+              
+              
+            
+
+
+	
+	
+		
+			<script type="text/javascript">
+				function topLoginSubmit(rn) {
+					if (trimString(getId("topLoginUsername"+rn).value) == "" || trimString(getId("topLoginPassword"+rn).value) == "") {
+						alert("Please enter your email and password!");
+					} else {
+						document.getElementsByName("topLoginForm"+rn)[0].submit(); 
+					}
+				}
+			</script><form method="post" name="topLoginForm1153" action="/apps/login/do_public_login.jsp?rn=3462" target="_top" style="margin: 0px; padding: 0px;">
+			<input type="hidden" name="f" value="/apps/account/other"><div id="student-vault-vertical" class="cf">
+				<div id="input-fields" class="cf">
+					<div id="email-container">
+					<label for="topLoginUsername1153">Email</label>: <input type="text" id="topLoginUsername1153" class="darkBox waInputText" name="username1153" maxlength="60" value="" onkeypress="onEnter(event, 'topLoginSubmit(\'1153\')');">
+</div>
+					<div id="password-container">
+					<label for="topLoginPassword1153">Password</label>: <input type="password" id="topLoginPassword1153" class="darkBox waInputPassword" name="password1153" maxlength="100" value="" onkeypress="onEnter(event, 'topLoginSubmit(\'1153\')');">
+</div>
+				</div>
+				<div id="sign-in" class="cf">
+					<a href="#" onclick="topLoginSubmit('1153');"><img alt="Sign in button" src="/apps/pics/b/sign_in_p18.png" width="55" height="18" align="absmiddle"></a>
+					
+					<a href="/apps/account/profile.jsp?activationForwardURL=/apps/account/other">Create Account</a>
+					
+				</div>
+			</div>
+			</form>
+		
+	
+
+          </div>
+        </div>
+        
+
+
+
+
+
+<select aria-label="Select translation language" id="googleTranslate"><option value="">Google Translate</option></select><script type="text/javascript" src="/apps/js/EN/loader/public_loader_20200323-pack.js"></script><script type="text/javascript">
+		try {
+			ENLoader.isLoaded();
+			ENLoader.addLibs("GoogleTranslate", "GoogleTranslate.init(['ar','bg','zh-CN','zh-TW','hr','cs','da','nl','tl','fi','fr','de','el','ht','iw','hi','it','ja','ko','no','pl','pt','ro','ru','es','sv','tr','uk','ur','vi'],['Arabic','Bulgarian','Chinese+%28Simplified%29','Chinese+%28Traditional%29','Croatian','Czech','Danish','Dutch','Filipino','Finnish','French','German','Greek','Haitian+Creole','Hebrew','Hindi','Italian','Japanese','Korean','Norwegian','Polish','Portuguese','Romanian','Russian','Spanish','Swedish','Turkish','Ukrainian','Urdu','Vietnamese'])");
+		} catch (e) {
+			console.log(e);
+		}
+	</script><div id="search" class="png-bg"> 
+  <!-- Google CSE Search Box Begins -->
+	<form action="/apps/search/index.jsp">
+		<input id="search-field" aria-label="Search input" name="q" type="text" value="Search" onclick="if (this.value=='Search') this.value='';" onblur="if (this.value=='') this.value='Search';"><input id="search-img" alt="Search button" class="png-bg" type="image" src="/pics/search_button.jpg" name="sa" value="Search">
+</form>
+	<!-- Google CSE Search Box Ends --> 
+</div>
+		  
+      </div>
+		<div id="donatetab">
+			<a href="/donations/">Donate today! </a>
+</div> 
+    </div>
+  </div>
+  <header id="header"><div class="inside"> <a class="logo ir" href="/index.jsp">Alabama School of Fine Arts</a>
+      <h1><a id="header-name" class="png-bg ir" href="/">Alabama School of Fine Arts</a></h1>
+      <nav id="menu"><ul id="nav_items_0">
+<li class="nav_items_0 nav_item_first ">
+<span class="nav_icon">»</span><a class="nav_items_0 " href="/apply/">Apply Today</a>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Explore</a><ul class="nav_items_0 ">
+<li class="hasSubNav nav_item_first ">
+<span class="nav_icon">&amp;plus;</span><a href="javascript:;">About ASFA ⇒</a><ul>
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/who-we-are/">Who We Are</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=200888&amp;type=d">History</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=200889&amp;type=d">Boards/Organization</a>
+</li>
+</ul>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=363179&amp;type=d">Stories</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/pdf/ASFA%20-%20Strategic%20Plan%20-%20Final%20-%20v_15Jul2014.pdf" target="_blank">Strategic Plan</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=217674&amp;type=d">Executive Director's Message</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=394129&amp;type=d">Executive Director Search</a>
+</li>
+<li class="hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a href="javascript:;">Policy &amp; Procedure ⇒</a><ul>
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/pdf/ASFA_Policy_Manual_2019.pdf" target="_blank">ASFA Policy Manual</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="https://alabama-sfa.entest.org/ASFA-Student-Handbook%20Updated-October-2019%20v2.pdf" target="_blank">Student Handbook</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/pdf/DormHandbook.pdf" target="_blank">Dorm Handbook</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=250425&amp;type=d" target="_blank">Acceptable Use Policy</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=234769&amp;type=d">BYOD</a>
+</li>
+</ul>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/video.jsp">Video Gallery</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Areas Of Study</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/creative-writing/">Creative Writing</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/dance/">Dance</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/math-science/">Math-Science</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/music/">Music</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/theatre-arts/">Theatre Arts</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/visual-arts/">Visual Arts</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/core-academics/">Core Academics</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=200920&amp;type=d">College &amp; Career</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Admissions</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/apply/">How to Apply</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/forms2/?f=693">Admissions Inquiries</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/visit-asfa/">Visit ASFA</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Community</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/staff/">Staff &amp; Faculty Directory</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/jobs/">Employment</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/alumni/">Alumni</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=393007&amp;type=d">Guest Artists</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=200889&amp;type=d">Boards/Organization</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Programs</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/summer-programs/">Summer Camps</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/the-season/">The Season</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/outreach/">Outreach</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="http://www.djdtheater.org/" target="_blank">DJD Theater</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=394348&amp;type=d">Vulcan Materials Gallery</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/book-asfa/">Book ASFA</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/upcoming-events/">Upcoming Events</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/apps/pages/index.jsp?uREC_ID=434127&amp;type=d">Math Tournament</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Contact Us</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/contact/">General Inquiries</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/forms2/?f=693">Admissions Inquiries</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/apps/maps/">Directions</a>
+</li>
+<li>
+<span class="nav_icon">»</span><a href="/keep-in-touch/">Keep In Touch</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/bids/">Bids</a>
+</li>
+</ul>
+</li>
+<li class="nav_items_0 hasSubNav nav_item_last ">
+<span class="nav_icon">&amp;plus;</span><a class="nav_items_0 " href="javascript:;">Foundation</a><ul class="nav_items_0 ">
+<li class="nav_item_first ">
+<span class="nav_icon">»</span><a href="/donations/">Donate Now</a>
+</li>
+<li class="nav_item_last ">
+<span class="nav_icon">»</span><a href="/foundation/">How We Give Back</a>
+</li>
+</ul>
+</li>
+</ul></nav>
+</div>
+    <!-- inside -->
+  </header>
+</div>
+<div class="content">
+
+<div class="inside">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+			
+
+
+<style>
+/* This prevents an element with an inline style attribute 
+ * setting the maximum possible z-index and overlaying 
+ * keyboard shortcuts (skip links) */
+*[style*="z-index:2147483647"] { z-index:2147483646!important; }
+
+/**/
+#shortcut-wrapper { display:none; position:absolute; z-index:2147483647!important; height:auto; width:275px; }
+.ada-shortcut { position:absolute; background-color:#fff; color:#000; display:block; font-size:24px!important; padding:4px 10px; position:absolute; text-decoration:none; left:-99999px; z-index:2147483647!important;}
+.ada-shortcut:hover, .ada-shortcut:focus, .ada-shortcut.onscreen { text-decoration: underline; top: 0; left: 0; background: #fafafa; border-radius: 0 0 2px 2px; margin: 5px auto; font-size: 1em; padding: 6px 12px; border-top: 0;  text-decoration: underline; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  outline: 0; box-shadow: 0 2px 5px rgba(0,0,0,.2); font-weight: bold; }
+.non-header { left:-9999px;  }
+</style>
+<script src="/apps/js/jquery/1.4.3/jquery.js"></script><script>var jAria = jQuery.noConflict();</script><script src="/apps/js/keyboard/mmAccess-pack.js?20190322"></script><div id="shortcut-wrapper">
+	
+	<a tabindex="1" href="#content-shortcut-target" id="at-header" class="ada-shortcut">Skip to main content</a>
+	
+	
+	<a tabindex="1" href="#nav_items_0" id="at-main_menu" class="skip-to-mainMenu ada-shortcut">Skip to main menu</a>
+	
+</div>
+
+<script>
+var _isHomepage = true;
+var _skipLinkToMainContent = 1;
+var _skipLinkToMainNav =  1;
+</script><script src="/apps/shared/skip_links-pack.js?20190607"></script><style>#nav_items_0 a.at-focus { font-size:145%!important; }</style>
+<script onload="javascript:ada_dom_order_correction()" src="/apps/js/keyboard/shortcut-dom-order.js?20180125"></script><img width="1" height="1" border="0" style="display: none;" alt="counter" src="//counter.educationalnetworks.net/servlet/count?b=R%20%283.5.3%20x86%5f64-apple-darwin15.6.0%20x86%5f64%20darwin15.6.0%29&amp;d=www.asfa.k12.al.us&amp;h=73.190.129.120&amp;i=ALABAMA-SFA&amp;p=443&amp;q=&amp;r=&amp;rn=6590&amp;t=w4a&amp;u=/index.jsp&amp;w=2820"><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div id="index-wrapper" class="container_12">
+  <div id="index-top" class="cf">
+    <div id="slideshow">
+		<!--<iframe class="educationalnetworks-embed-player" type="text/html" width="1246" height="700" src="//www.asfa.k12.al.us/apps/embed/?v=10034861" frameborder="0"></iframe>-->
+		<!--<iframe class="educationalnetworks-embed-player" type="text/html" width="1246" height="700" src="//www.asfa.k12.al.us/apps/embed/?v=10035135" frameborder="0"></iframe>-->
+		<!--<iframe class="educationalnetworks-embed-player" type="text/html" width="1246" height="700" src="//www.asfa.k12.al.us/apps/embed/?v=10037549" frameborder="0"></iframe>-->
+		<!--<iframe class="educationalnetworks-embed-player" type="text/html" width="1246" height="700" src="//www.asfa.k12.al.us/apps/embed/?v=10046937" frameborder="0"></iframe>-->
+		<iframe class="educationalnetworks-embed-player" type="text/html" width="1246" height="700" src="//www.asfa.k12.al.us/apps/embed/?v=10049098" frameborder="0"></iframe>
+		
+		
+	<!---->
+    </div>
+  </div> 
+	<!-- ** DO NOT DELETE **
+<div id="gradient">
+		<div id="caption1"> we are asfa</div>
+		<div id="caption2"> Alabama School of Fine Arts</div>
+	</div>-->
+  <div id="first-row">
+    <div id="facts">
+      <div id="row"> 
+		  <a href="/foundation/" id="fact">
+			  <h2>Tuition-Free</h2>
+			  <div id="icon1"></div>
+			  <span>
+				  ASFA is the only tuition-free <br>
+				  magnet school for the arts and <br>
+				  sciences serving the entire state.</span> 
+		  </a> 
+		  
+		  <a href="/apps/pages/index.jsp?uREC_ID=200901&amp;type=d" id="fact">
+			  <h2>Affordable Living</h2>
+			  <div id="icon2"></div>
+			  <span>Dormitory space is available so<br>
+				  students from across the state<br>
+				  can attend ASFA.</span> 
+		  </a> 
+		  
+		  <a href="/apps/pages/index.jsp?uREC_ID=201431&amp;type=d" id="fact">
+			  <h2>Grades 7 - 12</h2>
+			  <div id="icon3"></div>
+			  <span>ASFA provides core academics and<br>
+				  specialty instruction to earn an<br>
+				  advanced high school diploma.</span>
+		  </a> 
+		 		  
+		  <a href="/who-we-are/" id="fact" class="fact4">
+			  <h2>Specialty Studies</h2>
+			  <div id="icon4"></div>
+			  <span>Students spend 3+ hours a day<br>
+				  in the specialty area they are<br>
+				  passionate about.</span> 
+		  </a> 
+		   <!--<a  href="/apply/" id="fact">
+			  <h2>Grades 7 - 12</h2>
+			  <div id="icon3"></div>
+			  <span>We provide core academics and<br />
+				  specialty instruction to earn an<br />
+				  Alabama high school diploma.</span> 
+		  </a> -->
+		</div>
+    </div>
+  </div>
+  <div id="second-row">
+    <div class="row-inner">
+      <h2>Specialty Studies</h2>
+      <div id="slide-shows" class="png-bg">
+        <ul>
+<li id="q-4"> <a href="/music/">
+            <h3>Music</h3>
+            <div id="left-fade"></div>
+            <div id="text">Professional Performances<br>Composing &amp; Songwriting<br>History &amp; Theory</div>
+            </a> </li>
+			
+            <li id="q-2"> <a href="/dance/">
+            <h3>Dance</h3>
+            <div id="left-fade"></div>
+			  <div id="text"> RPM Certified Curriculum<br>Partnering &amp; Repertoire<br>Choreography Seminar</div>
+            </a> </li>
+			
+			<li id="q-6"> <a href="/visual-arts/">
+            <h3>Visual Arts</h3>
+            <div id="left-fade"></div>
+            <div id="text">Printmaking &amp; Drawing<br>Sculpture &amp; Painting<br>Art History</div>
+            </a> </li>
+			
+			<li id="q-1"> <a href="/creative-writing/">
+            <h3>Creative Writing</h3>
+            <div id="left-fade"></div>
+            <div id="text">Writing Workshops<br>Literary Anthology<br>Elements of Narrative</div>
+            </a> </li>
+			
+            <li id="q-5"> <a href="/theatre-arts/">
+            <h3>Theatre Arts</h3>
+            <div id="left-fade"></div>
+			  <div id="text">Acting &amp; Directing<br>Stage Management<br>Costuming &amp; Set Design</div>
+            </a> </li>
+          
+			<li id="q-3"> <a href="/math-science/">
+            <h3>Math &amp; Science</h3>
+            <div id="left-fade"></div>
+            <div id="text"> Research Based <br>AP Level Coursework<br>Computer Science</div>
+            </a> </li>
+			
+        </ul>
+</div>
+    </div>
+  </div>
+  <div id="third-row">
+    <div class="row-inner">
+      <div id="buttons">
+        <ul class="tabs">
+<li id="b-1"><a name="tab" id="tab_1" href="javascript:void(0)" onclick="tabs(1)" class="active">News &amp; Announcements</a></li>
+          <li id="b-2"><a name="tab" id="tab_2" href="javascript:void(0)" onclick="tabs(2)">Student Announcements</a></li>
+        </ul>
+</div>
+		
+		<a href="/apps/news/index.jsp?id=0" class="news_arrow_0">All News</a> 
+		<a href="/apps/news/index.jsp?id=1" class="news_arrow_1">All Student Announcements</a> 
+		
+      <div name="tab_content" id="tab_content_1" class="tab_content active">
+        <!-- Flexible News Import Start -->
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+	    
+
+
+
+
+
+<div id="ALABAMA-SFA-0-news" class="homepage-news layout-3" style="opacity: 0; height: 0;">
+<h2><a href="/apps/news/index.jsp?id=0"> News and Announcements </a></h2>
+
+	<ul>
+<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=623946&amp;id=0"><img alt="ASFA writers place at Poetry Out Loud " src="/ourpages/auto/2020/3/23/39987495/89151992_10159516708403502_3209491986419548160_n_thumb.jpg" height="125"></a></div>
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=623946&amp;id=0" class="news-link">ASFA writers place at Poetry Out Loud </a>
+		</h3>
+		
+			
+					<div class="news-text">Congratulations to our writing students who performed and placed at the regional spoken word competition, Poet...</div>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=622276&amp;id=0"><img alt="Online Learning: We are a Community of Explorers" src="/ourpages/auto/2020/3/18/55738926/1fca1309-270e-4f0c-af19-4991ea8fc5f7_thumb.jpg" height="125"></a></div>
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=622276&amp;id=0" class="news-link">Online Learning: We are a Community of E...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=619201&amp;id=0"><img alt='Theatre Arts "The Royale" Planned for this Weekend is Postponed' src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=619201&amp;id=0" class="news-link">Theatre Arts "The Royale" Planned for th...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=618198&amp;id=0"><img alt="Math-science seniors win at CARSEF" src="/ourpages/auto/2020/3/10/59707392/math%20science%20seniors_thumb.jpg" height="125"></a></div>
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=618198&amp;id=0" class="news-link">Math-science seniors win at CARSEF</a>
+		</h3>
+		
+			
+					<div class="news-text">Our students scored well across the board at the 2020 CARSEF</div>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=618138&amp;id=0"><img alt="ASFA math-science headed to National Science Bowl" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=618138&amp;id=0" class="news-link">ASFA math-science headed to National Sci...</a>
+		</h3>
+		
+			
+					<div class="news-text">We are proud of our math-science middle schoolers who won big last weekend!</div>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=618125&amp;id=0"><img alt="ASFA wins big at August Wilson Monologue Competition" src="/ourpages/auto/2020/3/10/53205020/89198398_2787007224716153_6442275374326874112_n_thumb.jpg" height="125"></a></div>
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=618125&amp;id=0" class="news-link">ASFA wins big at August Wilson Monologue...</a>
+		</h3>
+		
+			
+					<div class="news-text">Our Theatre Arts students placed first and second last Saturday in Atlanta!</div>
+		
+		
+	 	</div>
+		</li>
+	
+	</ul>
+<div class="news-showAll">
+			<a href="/apps/news/index.jsp?id=0"> Show All </a>
+		</div>	
+	
+</div>
+
+
+<script>
+// Equalize height 
+function equalHeight(parent, children) {
+	// Define height 
+	var bxSlider = document.querySelectorAll(parent);
+	var maxHeight = document.querySelector(children).clientHeight;
+	
+	// Loop through each LI and add min height
+	for (i = 0; i < bxSlider.length; i++) { 
+		bxSlider[i].style.minHeight = maxHeight - 2 + "px";
+	}// End loop 
+}
+
+function adaptiveThumbHeight(parentID) {
+	var totalNumThumbs = document.querySelectorAll(parentID + ' .news-thumb');
+	for (var i = 0; i < totalNumThumbs.length; i++) { 
+		  var thumbContainerHeight = totalNumThumbs[i].offsetHeight; 
+		  var thumbImgHeight = totalNumThumbs[i].querySelector('img').height;
+		  var totalDiff = (thumbContainerHeight - thumbImgHeight) / 2;
+		  
+		  if (thumbImgHeight > thumbContainerHeight) {
+			  totalNumThumbs[i].className += " tallImage";
+		  }
+		  
+		  if (totalDiff > 0) {
+		  	totalNumThumbs[i].querySelector('img').style.marginTop = totalDiff + "px";
+		  }
+	}
+}
+
+</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script src="/apps/shared/jquery.bxslider.min.js"></script><link href="/apps/shared/jquery.bxslider.min.css" rel="stylesheet">
+<style type="text/css">
+	/* Default Styles */
+	#ALABAMA-SFA-0-news .bx-wrapper {width: 1000px;}
+	html body .bx-wrapper {box-shadow: none; border: 0; margin: 0 auto; background: transparent !important;}
+	.layout-3 .bx-wrapper .bx-next { right: -40px; }
+	.layout-3 .bx-wrapper .bx-prev { left: -40px; }
+	.layout-3 { padding-bottom: 20px; }
+	.layout-3 h2 {margin: 0 0 10px; padding: 0; display: none;}
+	.layout-3 h2 a {text-decoration: none; color: #212121; font-size: 18px;}
+	.layout-3 {line-height: 18px; display: block; margin: 0 auto; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	.layout-3 ul {position: relative; display: inline-block; padding: 0; margin: 0; }
+	.layout-3 li {position: relative; display: block; padding: 0; margin: 0; list-style: none;  border: 1px solid #eee;  background: #fff; }
+	
+	/* Thumbnail */
+	.layout-3 .news-thumb {background: #fafafa; height: 170px; overflow: hidden; color: #fff; text-align: center; vertical-align: middle; width: 100%;}   
+	.layout-3 .news-thumb img {display: block; width: 100%;height: auto; text-align: center; margin: 0 auto;}	
+	.layout-3 .news-thumb.tallImage img {height: 100% !important; width: auto;}
+	
+	/* Caption */
+	.layout-3 .news-wrap {position: relative;  margin: 0; padding: 10px; /*background: #fff; height: 85px; */}
+	.layout-3 .news-title {padding: 0; margin: 0 0 5px; }
+	.layout-3 .news-title a {text-decoration: none; font-weight: bold; font-size: 14px; color: #212121; padding: 0; margin: 0;}
+	.layout-3 .news-text {font-size: 12px; font-weight: 400; padding: 0; color: #424242;}
+	
+	/* Custom */
+	.layout-3{margin: 0 auto; opacity: 0; height: 0;}
+	.layout-3.AutoHeight {height: inherit !important;}
+	.layout-3 .news-showAll {display: none; text-align: center; margin-top: 20px;}    
+	
+	</style>
+<script type="text/javascript">
+    var jS = jQuery.noConflict(); 
+	 
+	jS(document).ready(function() {
+	  jS('#ALABAMA-SFA-0-news').css('opacity','1').addClass('AutoHeight');
+	  slider0NEWS = jS('#ALABAMA-SFA-0-news ul').bxSlider({
+		responsive: true,
+		slideWidth: 235,
+		minSlides: 4,
+		maxSlides: 4,
+		slideMargin: 20,
+		pager: false,
+		touchEnabled: false,
+		moveSlides: 1,
+		infiniteLoop: true,
+		hideControlOnEnd: false,
+		onSliderLoad: function() {
+			jS('.bx-next').text('Next News Items Group').attr('alt','Next News Items Group');
+			jS('.bx-prev').text('Previous News Items Group').attr('alt','Previous News Items Group');
+		}
+	  });
+		equalHeight('#ALABAMA-SFA-0-news .bx-viewport li','#ALABAMA-SFA-0-news .bx-viewport ul');
+	});
+	jS(window).on("load", function() {
+		
+	});
+	</script><!-- Flexible News Import End -->
+</div>
+      <div name="tab_content" id="tab_content_2" class="tab_content">
+        <!-- Flexible News Import Start -->
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+		  
+
+
+
+
+
+<div id="ALABAMA-SFA-1-news" class="homepage-news layout-3" style="opacity: 0; height: 0;">
+<h2><a href="/apps/news/index.jsp?id=1"> Student Announcments </a></h2>
+
+	<ul>
+<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=619251&amp;id=1"><img alt=" Announcements For ASFA Students – Friday, March 13, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=619251&amp;id=1" class="news-link"> Announcements For ASFA Students – Frida...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=619241&amp;id=1"><img alt="Second Talent Hunt from different Omega Psi Phi Fraternity chapter seeks participants for prizes" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=619241&amp;id=1" class="news-link">Second Talent Hunt from different Omega ...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=618428&amp;id=1"><img alt="Announcements  For ASFA Students –Wednesday, March 11, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=618428&amp;id=1" class="news-link">Announcements  For ASFA Students –Wednes...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=617803&amp;id=1"><img alt="Announcements  For ASFA Students – Monday, March 9, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=617803&amp;id=1" class="news-link">Announcements  For ASFA Students – Monda...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=617404&amp;id=1"><img alt="Announcements For ASFA Students – Friday, March 6, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=617404&amp;id=1" class="news-link">Announcements For ASFA Students – Friday...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=616807&amp;id=1"><img alt="Announcements  For ASFA Students –Wednesday, March 4, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=616807&amp;id=1" class="news-link">Announcements  For ASFA Students –Wednes...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=615906&amp;id=1"><img alt="Announcements  For ASFA Students – Monday, March 2, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=615906&amp;id=1" class="news-link">Announcements  For ASFA Students – Monda...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-even">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=615724&amp;id=1"><img alt="  Announcements  For ASFA Students – Friday, Feb. 28, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=615724&amp;id=1" class="news-link">  Announcements  For ASFA Students – Fri...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+		<li class="news-odd">			
+			
+				
+			<div class="news-thumb"><a href="/apps/news/show_news.jsp?REC_ID=615176&amp;id=1"><img alt="Announcements  For ASFA Students –Wednesday, Feb. 26, 2020" src="/pics/default_img.jpg" height="125"></a></div>
+		
+		
+		<div class="news-wrap">
+		<h3 class="news-title">
+			
+			<a href="/apps/news/show_news.jsp?REC_ID=615176&amp;id=1" class="news-link">Announcements  For ASFA Students –Wednes...</a>
+		</h3>
+		
+		
+	 	</div>
+		</li>
+	
+	</ul>
+<div class="news-showAll">
+			<a href="/apps/news/index.jsp?id=1"> Show All </a>
+		</div>	
+	
+</div>
+
+
+<script>
+// Equalize height 
+function equalHeight(parent, children) {
+	// Define height 
+	var bxSlider = document.querySelectorAll(parent);
+	var maxHeight = document.querySelector(children).clientHeight;
+	
+	// Loop through each LI and add min height
+	for (i = 0; i < bxSlider.length; i++) { 
+		bxSlider[i].style.minHeight = maxHeight - 2 + "px";
+	}// End loop 
+}
+
+function adaptiveThumbHeight(parentID) {
+	var totalNumThumbs = document.querySelectorAll(parentID + ' .news-thumb');
+	for (var i = 0; i < totalNumThumbs.length; i++) { 
+		  var thumbContainerHeight = totalNumThumbs[i].offsetHeight; 
+		  var thumbImgHeight = totalNumThumbs[i].querySelector('img').height;
+		  var totalDiff = (thumbContainerHeight - thumbImgHeight) / 2;
+		  
+		  if (thumbImgHeight > thumbContainerHeight) {
+			  totalNumThumbs[i].className += " tallImage";
+		  }
+		  
+		  if (totalDiff > 0) {
+		  	totalNumThumbs[i].querySelector('img').style.marginTop = totalDiff + "px";
+		  }
+	}
+}
+
+</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script src="/apps/shared/jquery.bxslider.min.js"></script><link href="/apps/shared/jquery.bxslider.min.css" rel="stylesheet">
+<style type="text/css">
+	/* Default Styles */
+	#ALABAMA-SFA-1-news .bx-wrapper {width: 1000px;}
+	html body .bx-wrapper {box-shadow: none; border: 0; margin: 0 auto; background: transparent !important;}
+	.layout-3 .bx-wrapper .bx-next { right: -40px; }
+	.layout-3 .bx-wrapper .bx-prev { left: -40px; }
+	.layout-3 { padding-bottom: 20px; }
+	.layout-3 h2 {margin: 0 0 10px; padding: 0; display: none;}
+	.layout-3 h2 a {text-decoration: none; color: #212121; font-size: 18px;}
+	.layout-3 {line-height: 18px; display: block; margin: 0 auto; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	.layout-3 ul {position: relative; display: inline-block; padding: 0; margin: 0; }
+	.layout-3 li {position: relative; display: block; padding: 0; margin: 0; list-style: none;  border: 1px solid #eee;  background: #fff; }
+	
+	/* Thumbnail */
+	.layout-3 .news-thumb {background: #fafafa; height: 170px; overflow: hidden; color: #fff; text-align: center; vertical-align: middle; width: 100%;}   
+	.layout-3 .news-thumb img {display: block; width: 100%;height: auto; text-align: center; margin: 0 auto;}	
+	.layout-3 .news-thumb.tallImage img {height: 100% !important; width: auto;}
+	
+	/* Caption */
+	.layout-3 .news-wrap {position: relative;  margin: 0; padding: 10px; /*background: #fff; height: 85px; */}
+	.layout-3 .news-title {padding: 0; margin: 0 0 5px; }
+	.layout-3 .news-title a {text-decoration: none; font-weight: bold; font-size: 14px; color: #212121; padding: 0; margin: 0;}
+	.layout-3 .news-text {font-size: 12px; font-weight: 400; padding: 0; color: #424242;}
+	
+	/* Custom */
+	.layout-3{margin: 0 auto; opacity: 0; height: 0;}
+	.layout-3.AutoHeight {height: inherit !important;}
+	.layout-3 .news-showAll {display: none; text-align: center; margin-top: 20px;}    
+	
+	</style>
+<script type="text/javascript">
+    var jS = jQuery.noConflict(); 
+	 
+	jS(document).ready(function() {
+	  jS('#ALABAMA-SFA-1-news').css('opacity','1').addClass('AutoHeight');
+	  slider1NEWS = jS('#ALABAMA-SFA-1-news ul').bxSlider({
+		responsive: true,
+		slideWidth: 235,
+		minSlides: 4,
+		maxSlides: 4,
+		slideMargin: 20,
+		pager: false,
+		touchEnabled: false,
+		moveSlides: 1,
+		infiniteLoop: true,
+		hideControlOnEnd: false,
+		onSliderLoad: function() {
+			jS('.bx-next').text('Next News Items Group').attr('alt','Next News Items Group');
+			jS('.bx-prev').text('Previous News Items Group').attr('alt','Previous News Items Group');
+		}
+	  });
+		equalHeight('#ALABAMA-SFA-1-news .bx-viewport li','#ALABAMA-SFA-1-news .bx-viewport ul');
+	});
+	jS(window).on("load", function() {
+		
+	});
+	</script><!-- Flexible News Import End -->
+</div>
+    </div>
+  </div>
+  <div id="fourth-row">
+    <div id="column-wrap">
+      <div id="columns" class="cf">
+        <div id="left-column" class="cf">
+          <!---->
+			<section id="events2"><h2><a class="png-bg" href="/calendars/">School Calendar</a></h2>
+				<div class="container">
+					
+					
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<style>
+		#events .dayInfoWrap:focus { outline-width:2px; outline-style:dashed; outline-color:invert; }
+	</style>
+<link rel="stylesheet" href="/apps/events2/css/events-pack.css?v=20180201" type="text/css">
+<div role="region" aria-label="Upcoming Events" id="hp-events" class="HPEvents">
+				<div id="events" class="v3">
+				
+					
+					
+					
+					
+						
+						<div role="group" class="dayeventwrap" id="ttoday">
+						<div aria-label="March twenty seventh" class="dayInfoWrap  today">
+							<span class="month">Mar</span>
+							<span class="day">27</span>
+						</div> 
+						<ul role="presentation" class="today">
+<li class="event diffday first finaleventofday">
+							<div class="title">
+								<a role="heading" aria-level="3" href="/apps/events2/event.jsp?eREC_ID=2505986&amp;d=2020-03-27&amp;id=19">
+								Spring Break - School Closed
+								</a>
+							</div>
+							
+						
+							
+							
+						</li>
+					
+					
+					
+					
+					
+						
+							</ul>
+</div>
+						
+						<div role="group" class="dayeventwrap">
+						<div aria-label="March twenty ninth" class="dayInfoWrap ">
+							<span class="month">Mar</span>
+							<span class="day">29</span>
+						</div> 
+						<ul role="presentation" class="">
+<li class="event diffday finaleventofday">
+							<div class="title">
+								<a role="heading" aria-level="3" href="/apps/events2/event.jsp?eREC_ID=2505987&amp;d=2020-03-29&amp;id=19">
+								Dorm Opens at 3 PM
+								</a>
+							</div>
+							
+						
+							<div aria-label="three PM until three PM" class="time">
+								<span>Time:</span>
+								<span class="timefrom">
+								3:00 PM</span> 
+								
+								 - <span class="timeto">3:00 PM</span>
+							</div>
+							
+							
+							
+						</li>
+					
+					
+					
+					
+					
+						
+							</ul>
+</div>
+						
+						<div role="group" class="dayeventwrap">
+						<div aria-label="March thirtyth" class="dayInfoWrap ">
+							<span class="month">Mar</span>
+							<span class="day">30</span>
+						</div> 
+						<ul role="presentation" class="">
+<li class="event diffday finaleventofday">
+							<div class="title">
+								<a role="heading" aria-level="3" href="/apps/events2/event.jsp?eREC_ID=2832215&amp;d=2020-03-30&amp;id=19">
+								ASFA Bus Maintenance
+								</a>
+							</div>
+							
+						
+							<div aria-label="seven AM until ten AM" class="time">
+								<span>Time:</span>
+								<span class="timefrom">
+								7:00 AM</span> 
+								
+								 - <span class="timeto">10:00 AM</span>
+							</div>
+							
+							
+								<div role="listitem" class="location">
+									<span>Location:</span>
+									Off Campus
+								</div>
+							
+							
+						</li>
+					
+					
+					
+					
+					
+						
+							</ul>
+</div>
+						
+						<div role="group" class="dayeventwrap">
+						<div aria-label="March thirty first" class="dayInfoWrap ">
+							<span class="month">Mar</span>
+							<span class="day">31</span>
+						</div> 
+						<ul role="presentation" class="">
+<li class="event diffday finaleventofday">
+							<div class="title">
+								<a role="heading" aria-level="3" href="/apps/events2/event.jsp?eREC_ID=2688757&amp;d=2020-03-31&amp;id=19">
+								ASFA Music Department (Junior/Senior Recital)
+								</a>
+							</div>
+							
+						
+							<div aria-label="three PM until four fourty PM" class="time">
+								<span>Time:</span>
+								<span class="timefrom">
+								3:00 PM</span> 
+								
+								 - <span class="timeto">4:40 PM</span>
+							</div>
+							
+							
+								<div role="listitem" class="location">
+									<span>Location:</span>
+									Hess Abroms Recital Hall, 1800 REVEREND ABRAHAM WOODS, JR. BLVD.
+								</div>
+							
+							
+						</li>
+					</ul>
+</div>  
+		</div> 
+	
+
+</div>
+
+
+
+
+
+
+
+					<br><br><a class="eventshow" href="/calendars/">SHOW ALL</a>
+				</div>
+				
+			</section><a class="fullshow" href="/calendars/">FULL ASFA CALENDAR »</a>
+			<!---->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fifth-row">
+    <div id="slide-1" class="homeSlide">
+      <div class="bcg" data-anchor-target="#slide-1">
+		  <div class="row-inner"> <a target="_self" href="/donations/" id="caption">
+          <h2>Be a Vital Part of the Performance</h2>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+  <div id="sixth-row">
+    <div class="row-inner cf">
+		
+		<!--
+		
+      <section id="facebook-section">
+        <h2><a class="png-bg" href="https://www.facebook.com/asfaschool/" target="_blank">Facebook</a></h2>
+        <div class="container">
+          <div class="fb-page" data-href="https://www.facebook.com/asfaschool/" data-width="320" data-height="360" data-tabs="events" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/asfaschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/asfaschool/">Alabama School of Fine Arts</a></blockquote>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <h2><a class="png-bg" href="/apps/pages/index.jsp?uREC_ID=363179&type=d">Stories</a></h2>
+        <div class="container">
+          
+            
+          
+
+
+
+
+
+
+
+	
+	<table  id="news5wrapper" role="region" aria-label="Stories" border="0" cellpadding="3" cellspacing="0" class="HPNews">
+	
+	
+		
+		<tr >
+			<td width="15" align="right" valign="top" id="l"><img alt=""  src="/pics/bullet_arrow.gif" vspace="1"></td>
+			<td id="r">
+			
+				<a role="heading" aria-level="3" href="/apps/news/show_news.jsp?REC_ID=563385&id=5">We are Visual Arts. We are ASFA. </a><br>			
+			
+				
+				
+					
+				
+									
+				
+					Passion breeds passion inside and outside the walls of the Alabama School of Fine Arts’ art studios.<br>
+				
+				
+			</td>
+		</tr>
+	
+		
+		<tr >
+			<td width="15" align="right" valign="top" id="l"><img alt=""  src="/pics/bullet_arrow.gif" vspace="1"></td>
+			<td id="r">
+			
+				<a role="heading" aria-level="3" href="/apps/news/show_news.jsp?REC_ID=556626&id=5">We are Theatre Arts. We are ASFA.</a><br>			
+			
+				
+				
+					
+				
+									
+				
+					“I believe in the American theatre. I believe in its power to inform about the human condition, its power to heal … its power to uncover the truths we wrestle from uncertain and sometimes unyielding realities.” -August Wilson<br>
+				
+				
+			</td>
+		</tr>
+	
+		
+		<tr >
+			<td width="15" align="right" valign="top" id="l"><img alt=""  src="/pics/bullet_arrow.gif" vspace="1"></td>
+			<td id="r">
+			
+				<a role="heading" aria-level="3" href="/apps/news/show_news.jsp?REC_ID=541504&id=5">We are Music. We are ASFA. </a><br>			
+			
+				
+				
+					
+				
+									
+				
+					The Alabama School of Fine Arts Department of Music offers training and experience that prepare music majors for advancement to universities, college-level conservatories, and subsequent professional careers.<br>
+				
+				
+			</td>
+		</tr>
+	
+	
+	
+	
+	
+	</table>
+	
+
+
+
+
+
+			<table>
+			<tr id="showAll-5">
+			<td id="l" width="15">&nbsp;</td>
+			<td id="r"><b><a aria-label="Show all articles from Stories" href="/apps/pages/index.jsp?uREC_ID=363179&type=d">Show All</a></b><br></td>
+		</tr>
+			</table>
+        </div>
+      </section>
+      <section id="twitter-section">
+        <h2><a class="png-bg" href="https://www.instagram.com/asfaschool/" target="_blank">Instagram <span>@asfaschool</span></a></h2>
+        <div class="container">
+			<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e5dc92d7e9925b3eb37854b97c6f8b3b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+        </div>
+      </section>
+		
+		
+		-->
+		
+		<div class="staff-wrapper">
+<div class="staff-grabber">
+  <h2>The ASFA Faculty and Staff</h2>
+  <p>Our faculty members have reached #1 on the Billboard Soft Jazz chart, danced internationally with New York’s American Ballet Theatre, been recognized nationally for inspiring others, and have permanent art installations in major galleries throughout the country.</p>
+</div>
+<br><br><ul class="bxslider">
+<li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="/apps/pages/index.jsp?uREC_ID=763877&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/763877/ALABAMA-SFA1474313491425.jpg"></a> </div>
+      <div class="staff-name"> <a href="/apps/pages/index.jsp?uREC_ID=763877&amp;type=u">Wes Chapman</a> </div>
+      <div class="staff-position"> <strong> Dance Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="/apps/pages/index.jsp?uREC_ID=411158&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/411158/ALABAMA-SFA1582043841753.jpg"></a> </div>
+      <div class="staff-name"> <a href="/apps/pages/index.jsp?uREC_ID=411158&amp;type=u">Darius Hill</a> </div>
+      <div class="staff-position"> <strong>Visual Arts Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="/apps/pages/index.jsp?uREC_ID=411127&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/411127/ALABAMA-SFA1524262185070.jpg"></a> </div>
+      <div class="staff-name"> <a href="/apps/pages/index.jsp?uREC_ID=411127&amp;type=u">Hungsin Chin</a> </div>
+      <div class="staff-position"> <strong>Math/Science Chair </strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="/apps/pages/index.jsp?uREC_ID=411111&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/411111/ALABAMA-SFA1524844208787.jpg"></a> </div>
+      <div class="staff-name"> <a href="/apps/pages/index.jsp?uREC_ID=411111&amp;type=u">TJ Beitelman</a> </div>
+      <div class="staff-position"> <strong>Creative Writing Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=1058083&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/1058083/ALABAMA-SFA1563552781255.jpg"></a> </div>
+      <div class="staff-name"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=1058083&amp;type=u">John Manzelli</a> </div>
+      <div class="staff-position"> <strong>Theatre Arts Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=411144&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/411144/ALABAMA-SFA1479324573848.jpg"></a> </div>
+      <div class="staff-name"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=411144&amp;type=u">Dr. Robert Janssen</a> </div>
+      <div class="staff-position"> <strong>Music Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+  <li>
+    <div class="staff-summary">
+      <div class="staff-photo"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=411143&amp;type=u"><img src="https://www.asfa.k12.al.us/ourpages/auto/profiles/411143/ALABAMA-SFA1515773196040.jpg"></a> </div>
+      <div class="staff-name"> <a href="https://www.asfa.k12.al.us/apps/pages/index.jsp?uREC_ID=411143&amp;type=u">Ms. Cathy Spence</a> </div>
+      <div class="staff-position"> <strong>Music Chair</strong> </div>
+      <div class="staff-description">
+        <p>xxx</p>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script src="/apps/shared/jquery.bxslider.min.js"></script><link href="/apps/shared/jquery.bxslider.min.css" rel="stylesheet">
+<script>
+var jS = jQuery.noConflict();
+					
+staffSlider = jS('.bxslider').bxSlider({
+  pager: false,
+  touchEnabled: false,
+  slideWidth: 326,
+  minSlides: 3,
+  maxSlides: 3,
+  slideMargin: 20
+});
+</script><link href="https://fonts.googleapis.com/css?family=Karla:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700" rel="stylesheet">
+<style>
+.staff-wrapper { padding: 96px 0; }
+.staff-wrapper .bx-wrapper {box-shadow: none !important; margin-bottom: 0 !important; }
+.staff-wrapper .bx-wrapper .bx-viewport {height: auto !important; }
+.staff-wrapper .bx-controls {position: absolute; top: -20px; right: 0; }
+.staff-grabber { text-align: center;}
+.staff-grabber h2 {font-size: 32px; font-weight: 500; padding: 0; marign-bottom: 15px; }
+.staff-grabber p {margin: 0; padding: 15px; font-size: 22px;     line-height: 32px;}
+.staff-header {margin-bottom: 15px; color: rgba(0,0,0,.6); font-size: 18px; font-weight: 400; display: block; } 
+.staff-photo {height: 225px; overflow: hidden; margin-bottom: 15px; }
+	.staff-photo img { width: /*100%*/ auto;text-align: center;display: block; position: relative; margin: 0 auto; height:100%;}
+	.staff-name a { position: relative; display: block; margin-bottom: 0; font-size: 20px; color: #b14fc6; text-decoration: none; line-height: 24px; text-align: center;}
+.staff-position strong { position: relative; display: block; margin-bottom: 10px; font-size: 16px; font-weight: 600; line-height: 22px;  text-align: center;}
+	.staff-description p {color: ##1f1f1f; font-size: 16px; font-weight: 300; line-height: 24px; margin: 0; padding: 0; display: none; }
+.staff-wrapper	.bx-wrapper .bx-next { right: 0;width: 11px !important;height: 20px !important; background: url("/pics/staff_next.png") no-repeat !important;}
+.staff-wrapper	.bx-wrapper .bx-prev {left: -45px;width: 11px !important;height: 20px !important;background: url("/pics/staff_prev.png") no-repeat !important;}
+</style>
+</div>
+  </div>
+	
+	
+  <!--div id="seventh-row">
+    <div class="row-inner cf">
+		<section id="staffhighlight-section">
+			<h2><a class="png-bg" href="/">ASFA’s Dedicated Faculty</a></h2>
+			<span>Our faculty members have reached #1 on the Billboard Soft Jazz chart, danced internationally with New York’s American Ballet Theatre, been recognized nationally for inspiring others, and have permanent art installations in major galleries throughout the country.</span>
+
+			
+		</section>	
+	 </div>
+  </div-->	
+	
+	<div id="seventh-row">
+    <div class="row-inner cf">
+		<section><h2><a class="png-bg">Follow Us</a></h2>
+			<div align="center">
+				<a href="https://www.youtube.com/channel/UCU5VHs5HyQyJVkQb-4iWxdA" target="_blank"><img class="n_youtube" src="/pics/social_icons/youtube.png" alt="YouTube" width="40"></a>
+				<a href="https://www.instagram.com/asfaschool/" target="_blank"><img class="n_instagram" src="/pics/social_icons/instagram.png" alt="instagram" width="40"></a>
+				<a href="https://www.facebook.com/asfaschool/" target="_blank"><img class="n_facebook" src="/pics/social_icons/facebook.png" alt="facebook" width="40"></a>
+				<a href="https://twitter.com/asfaschool" target="_blank"><img class="n_twitter" src="/pics/social_icons/twitter.png" alt="twitter" width="40"></a>
+			</div>
+		</section>
+</div>
+  </div>
+	
+</div>
+
+
+
+
+
+
+
+
+<script>
+(function(scripts) {
+
+	for (var i = 0; i < scripts.length; i++) {
+		var script = scripts[i];
+		if (script.src && script.src.match("wotd2.js")) {
+			try {
+				var newScript = document.createElement("script");
+				var cbName = "cb4005";
+				window[cbName] = function(html) {
+					newScript.outerHTML = html;
+				}
+				newScript.src = "/apps/word_of_the_day/hp_word_of_the_day.jsp?cb=" + cbName;
+				script.parentNode.replaceChild(newScript, script);
+			} catch(e) {
+				console.log(e);
+			}
+			break;
+		}
+	}
+	
+})(document.getElementsByTagName("script"));
+</script>
+</div>
+<!-- content-inner -->
+</div>
+<!-- content -->
+
+<div id="footer-links">
+  <ul>
+<li><a href="/contact/">Contact Us</a></li>
+    <li><a href="/apply/">How to Apply </a></li>
+    <li><a href="/calendars/"> Performance Calendar</a></li>
+    <li class="last"><a href="/donations/"> Donate Today!</a></li>
+  </ul>
+</div>
+<footer id="footer"><div id="school-img"></div>
+  <div id="footer-center"> 
+    <div id="footer-left"></div>
+  </div>
+  <div class="inside">
+    <div id="address-left" class="address" onclick="document.location.href='/apps/maps/'"> 1800 Reverend Abraham Woods, Jr. Blvd.<br>
+      Birmingham, AL 35203</div>
+    <div id="address-right" class="address" onclick="document.location.href='/apps/contact/'"> Phone: (205) 252-9241<br>
+      Fax: <span class="pdlf">(205) 251-9541</span> </div>
+    <a id="name" href="/" class="ir">Alabama School of Fine Arts</a>
+    <a id="logo" href="/" class="png-bg ir">Alabama School of Fine Arts</a>
+    <a id="district-logo1" class="ir" href="http://www.ncsss.org/" target="_blank">NCSSS</a> <a id="district-logo2" class="ir" href="http://www.artsschoolsnetwork.org/" target="_blank">Arts School Network</a> 
+    <a id="edunet" class="ir png-bg" href="http://www.educationalnetworks.net/" target="_blank">powered by Educational Networks</a> </div>
+</footer><div id="footer-bottom"></div>
+</div>
+<!-- wrapper -->
+<!--[if lt IE 7 ]>
+    <script src="/shared/js/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png-bg, .overlaycontainer");</script>
+  <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script><script src="/shared/js/scripts.js"></script><!-- Alert Start --><div id="alert-holder"></div>					
+
+
+<link rel="stylesheet" type="text/css" href="/apps/js/alert/v2/alertBox.css">
+<script type="text/javascript" src="/apps/js/alert/v3/alertBox.js"></script><script type="text/javascript">	
+	alertBox({ 
+		visible: true,
+		header: ' ',
+		footer: ' ',
+		uREC_ID: 385847,
+		pREC_ID: 723048,
+		ssp: true
+	});
+</script><!-- Alert End -->
+</body>
+<script type="text/javascript">
+		//proxyKiller();
+	</script><script type="text/javascript">
+	var curWindowOnLoad = window.onload;
+	window.onload = function() {
+		if(curWindowOnLoad) {
+			curWindowOnLoad();
+		}
+		if(document.getElementsByClassName) {
+			var newsImages = document.getElementsByClassName("news-img");
+			for(i=0; i<newsImages.length; ++i) {
+				newsImages[i].parentNode.style.marginRight = "1px";
+			}
+			var hpImages = document.getElementsByClassName("hp-img");
+			for(i=0; i<hpImages.length; ++i) {
+				hpImages[i].parentNode.style.marginRight = "1px";
+			}
+		}
+	};
+	</script>
+</html><!-- 94ms -->
