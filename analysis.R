@@ -13,8 +13,6 @@ d <- d %>%
   arrange(state, district)
 
 detector <- function(x) {
-  str_detect(x, "closed") |
-    str_detect(x, "closure") |
     str_detect(x, "coron*") |
     str_detect(x, "covid*")
 }
@@ -32,8 +30,6 @@ access_site <- function(name, state, id, url) {
   links <- h %>% 
     html_nodes("a")
   
-  closed <- str_detect(tolower(t), "closed")
-  closure <- str_detect(tolower(t), "closure")
   corona <- str_detect(tolower(t), "corona*")
   covid <- str_detect(tolower(t), "covid*")
   
@@ -54,10 +50,10 @@ access_site <- function(name, state, id, url) {
 
   link_urls <- link_urls[link_logical_to_index]
   
-  print(str_c("Processed ", name, " (", state, ") --- closed = ", closed, "; closure = ", closure, "; corona = ", corona, "; covid = ", covid, "; LINK FOUND: ", link_found))
+  print(str_c("Processed ", name, " (", state, ") --- corona = ", corona, "; covid = ", covid, "; LINK FOUND: ", link_found))
   #print(link_urls)
   
-  tibble(district_name = name, state = state, nces_id = id, url = url, closed = closed, closure = closure, corona = corona, covid = covid, scraping_failed = FALSE, 
+  tibble(district_name = name, state = state, nces_id = id, url = url, corona = corona, covid = covid, scraping_failed = FALSE, 
          link_found = link_found, link = list(link_urls))
   
 }
@@ -68,8 +64,6 @@ output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$
                                            state = NA, 
                                            nces_id = NA, 
                                            url = NA, 
-                                           closed = NA,
-                                           corona = NA,
                                            covid = NA,
                                            scraping_failed = TRUE, 
                                            link_found = NA,
