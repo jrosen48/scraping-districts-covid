@@ -9,4 +9,6 @@ See:
  - [/R/functions.R](/R/functions.R) (functions used in the analysis plan)
  - [/R/packages.R](/R/packages.R) (functions used in the analysis plan)
 
-The data used is from the [ELSI Table Generator](https://nces.ed.gov/ccd/elsi/tableGenerator.aspx)
+The data used is from the [ELSI Table Generator](https://nces.ed.gov/ccd/elsi/tableGenerator.aspx) and is in this repository:
+
+- [/district-data.csv](/district-data.csv)
