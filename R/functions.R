@@ -1,16 +1,22 @@
 library(tidyverse)
 library(rvest)
+library(drake)
 
-d <- read_csv('district-data.csv')
+read_data <- function(f) {
+  
+  d <- read_csv(f)
+  
+  d <- d %>% filter(`website-url` != "NA")
+  
+  d <- rename(d, district = "district-name",
+              nces_id = "nces-id",
+              website_url = "website-url")
+  
+  d <- d %>% 
+    arrange(state, district)
 
-d <- d %>% filter(`website-url` != "NA")
-
-d <- rename(d, district = "district-name",
-            nces_id = "nces-id",
-            website_url = "website-url")
-
-d <- d %>% 
-  arrange(state, district)
+  d
+}
 
 detector <- function(x) {
     str_detect(x, "coron*") |
@@ -58,7 +64,10 @@ access_site <- function(name, state, id, url) {
   
 }
 
-output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$website_url), 
+scrape_and_process_sites <- function(list_of_args) {
+  
+output <- pmap(list(name = list_of_args[[1]], state = list_of_args[[2]],
+                    id = list_of_args[[3]], url = list_of_args[[4]]), 
                possibly(access_site, 
                         otherwise = tibble(district_name = NA, 
                                            state = NA, 
@@ -70,3 +79,7 @@ output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$
                                            link = NA)))
 
 output_df <- map_df(output, ~.)
+
+return(output_df)
+
+}
