@@ -6,3 +6,4 @@ See:
 
  - [/_drake.R](/_drake.R)
  - [/R/plan.R](R/plan.R)
+ - [/R/functions.R](/R/functions.R)
