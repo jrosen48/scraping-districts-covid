@@ -11,9 +11,13 @@ d <- rename(d, district = "district-name",
 
 access_site <- function(name, state, id, url) {
   
-  t <- url %>% 
-    read_html() %>% 
+  h <- url %>% 
+    read_html()
+  
+  t <- h %>% 
     html_text()
+  
+  write_xml(h, str_c("xml-data/", state, "-", name, "-", id, "-", url, ".xml"))
   
   candidate_site <- str_detect(tolower(t), "clos*") | str_detect(tolower(t), "corona*") | str_detect(tolower(t), "covid*")
   
@@ -24,7 +28,7 @@ access_site <- function(name, state, id, url) {
   }
 }
 
-d <- d[1:5, ]
+# access_site(NA, NA, NA, 'https://denairusd.org')
 
 output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$website_url), 
      possibly(access_site, 
@@ -36,4 +40,4 @@ output <- pmap(list(name = d$district, state = d$state, id = d$nces_id, url = d$
                                  scraping_failed = TRUE, 
                                  content = NA)))
 
-output <- map_df(output, ~.)
+# output <- map_df(output, ~.)
