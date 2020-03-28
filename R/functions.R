@@ -8,7 +8,8 @@ read_data <- function(f) {
   
   d <- d %>% filter(`website-url` != "NA")
   
-  d <- rename(d, district = "district-name",
+  d <- rename(d, 
+              district = "district-name",
               nces_id = "nces-id",
               website_url = "website-url")
   
@@ -18,13 +19,8 @@ read_data <- function(f) {
   d
 }
 
-check_if_up_to_date <- function (state, name, id) {
-  f <- list.files("xml-data")
-  if (nchar(id) == 6) {
-    string <- str_c(state, "-", name, "-", str_c(0, id), "-", Sys.Date(), ".xml")
-  } else {
-    string <- str_c(state, "-", name, "-", id, "-", Sys.Date(), ".xml")
-  }
+check_if_up_to_date <- function (state, name, id, f) {
+  string <- str_c(state, "-", name, "-", id, "-", Sys.Date(), ".xml")
   string %in% f
 }
 
@@ -33,24 +29,28 @@ detector <- function(x) {
     str_detect(x, "covid*")
 }
 
-access_site <- function(name, state, id, url) {
+access_site <- function(name, state, id, url, f) {
   
-  # if (check_if_up_to_date(state, name, id)) {
-  #   return(tibble(district_name = NA, 
-  #                 state = NA, 
-  #                 nces_id = NA, 
-  #                 url = NA, 
-  #                 covid = NA,
-  #                 scraping_failed = TRUE, 
-  #                 link_found = NA,
-  #                 link = NA,
-  #                 already_accessed = TRUE))
-  # }
+  if (check_if_up_to_date(state, name, id, f)) {
+    #print(str_c("already accessed; skipping", name, " (", state, ")"))
+    return(tibble(district_name = name,
+                  state = state,
+                  nces_id = id, 
+                  url = NA, 
+                  corona = NA,
+                  covid = NA, 
+                  scraping_failed = NA, 
+                  link_found = NA, 
+                  link = NA,
+                  already_accessed = TRUE))
+  }
   
   h <- url %>% 
     read_html()
   
-  write_xml(h, str_c("xml-data/", state, "-", name, "-", id, "-", Sys.Date(), ".xml"))
+  file_name <- str_c("xml-data/", state, "-", name, "-", id, "-", Sys.Date(), ".xml")
+  
+  write_xml(h, file_out(file_name))
   
   t <- h %>% 
     html_text()
@@ -88,9 +88,11 @@ access_site <- function(name, state, id, url) {
 
 scrape_and_process_sites <- function(list_of_args) {
   
+  f <- list.files("xml-data")
+  
   output <- pmap(list(name = list_of_args[[1]], state = list_of_args[[2]],
                       id = list_of_args[[3]], url = list_of_args[[4]]), 
-                 possibly(access_site, 
+                 possibly(access_site,
                           otherwise = tibble(district_name = NA, 
                                              state = NA, 
                                              nces_id = NA, 
@@ -98,7 +100,8 @@ scrape_and_process_sites <- function(list_of_args) {
                                              covid = NA,
                                              scraping_failed = TRUE, 
                                              link_found = NA,
-                                             link = NA)))
+                                             link = NA)),
+                 f = f)
   
   output_df <- map_df(output, ~.)
   
