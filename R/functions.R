@@ -108,3 +108,44 @@ scrape_and_process_sites <- function(list_of_args) {
   return(output_df)
   
 }
+
+proc_xml <- function(f) {
+  
+  #f <- f[1]
+  
+  h <- f %>%
+    read_html()
+  
+  t <- h %>% 
+    html_text()
+  
+  links <- h %>% 
+    html_nodes("a")
+  
+  corona <- str_detect(tolower(t), "corona*")
+  covid <- str_detect(tolower(t), "covid*")
+  
+  link_found <- links %>% 
+    html_text() %>% 
+    tolower() %>% 
+    detector() %>% 
+    any()
+  
+  link_text <- links %>% 
+    html_text() %>%
+    tolower()
+  
+  link_logical_to_index <- link_text %>% 
+    detector()
+  
+  link_urls <- links %>%
+    rvest::html_attr("href") %>% 
+    as.character()
+  
+  link_urls <- link_urls[link_logical_to_index]
+
+  tibble(district_name = f,
+         corona = corona, covid = covid,
+         link_found = link_found, link = list(link_urls))
+  
+}

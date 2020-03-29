@@ -1,0 +1,28 @@
+---
+title: "Districts' response to COVID"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+library(readr)
+library(DT)
+```
+
+## Summary of data
+
+```{r}
+d <- read_csv("to_plot.csv")
+
+DT::datatable(d)
+```
+
+## District-level data
+
+```{r}
+library(readr)
+
+dd <- read_csv("2020-03-28-processed-data.csv")
+
+DT::datatable(dd)
+```

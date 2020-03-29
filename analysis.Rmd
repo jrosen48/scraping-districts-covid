@@ -1,3 +1,11 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
 library(tidyverse)
 library(rvest)
 library(osfr)
@@ -7,59 +15,15 @@ library(osfr)
 #   osf_download()
 
 f <- list.files("xml-data", full.names = T)
+```
 
-proc_xml <- function(f) {
-  
-  #f <- f[1]
-  
-  h <- f %>%
-    read_html()
-  
-  t <- h %>% 
-    html_text()
-  
-  links <- h %>% 
-    html_nodes("a")
-  
-  corona <- str_detect(tolower(t), "corona*")
-  covid <- str_detect(tolower(t), "covid*")
-  
-  link_found <- links %>% 
-    html_text() %>% 
-    tolower() %>% 
-    detector() %>% 
-    any()
-  
-  link_text <- links %>% 
-    html_text() %>%
-    tolower()
-  
-  link_logical_to_index <- link_text %>% 
-    detector()
-  
-  link_urls <- links %>%
-    rvest::html_attr("href") %>% 
-    as.character()
-  
-  link_urls <- link_urls[link_logical_to_index]
-  #print(str_c("Processed ", f, " --- corona = ", corona, "; covid = ", covid, "; LINK FOUND: ", link_found))
-  
-  tibble(district_name = f,
-         corona = corona, covid = covid,
-         link_found = link_found, link = list(link_urls))
-  
-}
+## Processing
 
-detector <- function(x) {
-  str_detect(x, "coron*") |
-    str_detect(x, "covid*")
-}
+```{r, echo = FALSE}
 
 otherwise <- tibble(district_name = NA,
                     corona = NA, covid = NA,
                     link_found = NA, link = NA)
-
-## PROCESSING
 
 l <- map(f, possibly(proc_xml, otherwise))
 
@@ -94,13 +58,17 @@ to_plot <- out_data %>%
   rename(ID = state) %>% 
   mutate(ID = tolower(ID))
 
+write_csv(to_plot, "to_plot.csv")
+
 node <- osfr::osf_retrieve_node("https://osf.io/2txjy/")
 
-write_csv(proc_data, "2020-03-28-processed-data.csv")
-osfr::osf_upload(node, "2020-03-28-processed-data.csv")
+write_csv(select(proc_data, -link), "2020-03-28-processed-data.csv")
+osfr::osf_upload(node, "2020-03-28-processed-data.csv", overwrite = T)
+```
 
-## PLOT by state
+## Plot by state
 
+```{r, echo = FALSE}
 library(sf)  
 US <- st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
 
@@ -119,4 +87,4 @@ p
 ggsave("img/adoption-over-time.png", width = 11, height = 11)
 
 states
-}
+```
