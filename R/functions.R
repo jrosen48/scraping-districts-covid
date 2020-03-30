@@ -1,7 +1,3 @@
-library(tidyverse)
-library(rvest)
-library(drake)
-
 read_data <- function(f) {
   
   d <- read_csv(f)

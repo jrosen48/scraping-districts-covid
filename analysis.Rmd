@@ -62,14 +62,92 @@ write_csv(to_plot, "to_plot.csv")
 
 node <- osfr::osf_retrieve_node("https://osf.io/2txjy/")
 
-write_csv(select(proc_data, -link), "2020-03-28-processed-data.csv")
-osfr::osf_upload(node, "2020-03-28-processed-data.csv", overwrite = T)
+# # update the data
+# write_csv(select(proc_data, -link), "2020-03-28-processed-data.csv")
+# 
+# osfr::osf_upload(node, "2020-03-28-processed-data.csv", conflicts = "overwrite")
+
+
+```
+
+```{r}
+split_name <- proc_data %>% 
+  mutate(split_name = str_split(district_name, "-")) %>% 
+  pull(split_name)
+
+proc_data <- proc_data %>% 
+  mutate(district_name = map_chr(split_name, ~.[3]),
+         date = map_chr(split_name, ~str_c(.[5], "-", .[6], "-", .[7])),
+         nces_id = map_chr(split_name, ~.[4]))
+
+proc_data <- proc_data %>% 
+  # mutate(state = str_split(state, "/"), 
+  #        state = map_chr(state, ~.[2]),
+  #        state = tools::toTitleCase(tolower(state)),
+  #        date = str_split(date, "\\."),
+  #        date = map_chr(date, ~.[1]),
+  mutate(district_name = tools::toTitleCase(tolower(district_name)))
+
+fin_data <- proc_data %>% 
+  select(state, district_name, nces_id, corona, covid,  n_links, link)
+
+tm <- read_csv("district-data.csv")
+
+tm <- tm %>% 
+  select(nces_id = `nces-id`,
+         base_url = `website-url`)
+
+fin_data <- fin_data %>% 
+  left_join(tm) %>% 
+  unnest(link) %>% 
+  mutate(link = str_c(base_url, link)) %>% 
+  select(state, district_name, nces_id, corona, covid, n_links, link)
+
+sum_links <- fin_data %>% 
+  filter(!is.na(link)) %>% 
+  group_by(nces_id) %>% 
+  summarize(links = toString(link))
+
+```
+
+```{r}
+contains_ext <- function(x) {
+  str_detect(x, "pdf") | str_detect(x, "png") | str_detect(x, "jpg") |
+    str_detect(x, "doc") | str_detect(x, "docx") | str_detect(x, "xlsx")
+}
+
+my_lgl <- fin_data$link %>% 
+  map_lgl(contains_ext)
+
+scrape_me <- function(x, lgl) {
+  h <- read_html(x)
+  write_xml(h, str_c("h", ".xml"))
+}
+
+
+
+```
+
+```{r}
+
+final_data <- fin_data %>% 
+  left_join(sum_links) %>% 
+  select(-link) %>% 
+  distinct(nces_id, .keep_all = T)
+
+write_csv(final_data, "2020-03-28-processed-data.csv")
+
+# update the data
+write_csv(final_data, "2020-03-28-processed-data.csv")
+
+osfr::osf_upload(node, "2020-03-28-processed-data.csv", conflicts = "overwrite")
 ```
 
 ## Plot by state
 
 ```{r, echo = FALSE}
-library(sf)  
+library(sf)
+
 US <- st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
 
 tp <- US %>% 
@@ -80,11 +158,47 @@ p <- ggplot(tp) +
   coord_sf(crs = st_crs(3347), default =TRUE) +
   theme_void() +
   theme(legend.position = "bottom", text = element_text(family = "Times", size = 18)) +
-  scale_fill_continuous("Proportion of districts' websites referencing COVID-19 or coronavirus")
+  scale_fill_continuous("Proportion of districts' websites referencing COVID-19 or Coronavirus")
 
 p
 
 ggsave("img/adoption-over-time.png", width = 11, height = 11)
 
 states
+```
+
+# New plot
+
+```{r}
+context <- read_csv("ELSI_csv_export_637211822971983301773.csv", skip = 6)
+context <- context %>% 
+  rename(nces_id = `Agency ID - NCES Assigned [District] Latest available year`)
+
+last_model <- final_data %>% 
+  left_join(context)
+
+edge <- read_excel("EDGE_GEOCODE_PUBLICLEA1819/EDGE_GEOCODE_PUBLICLEA_1819.xlsx")
+edge <- rename(edge, nces_id = LEAID)
+
+last_model <- last_model %>% 
+  left_join(edge)
+```
+
+```{r}
+tmm <- rename(last_model, latitude = LAT, longitude = LON)
+tmm <- tmm %>% filter(!is.na(latitude) & !is.na(longitude))
+
+mysf = st_as_sf(tmm, coords = c("longitude", "latitude"), 
+                 crs = 4326)
+
+US <- st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
+
+p <- ggplot(data = mysf) +
+  theme_void() + 
+  geom_sf(data = US) +
+  geom_sf() +
+  coord_sf(crs = st_crs(3347), default =TRUE) 
+
+mapview::mapview(p)
+
 ```
