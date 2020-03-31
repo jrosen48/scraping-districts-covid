@@ -119,13 +119,22 @@ contains_ext <- function(x) {
 my_lgl <- fin_data$link %>% 
   map_lgl(contains_ext)
 
-scrape_me <- function(x, lgl) {
-  h <- read_html(x)
-  write_xml(h, str_c("h", ".xml"))
+scrape_me <- function(x, lgl, nces_id, today) {
+  
+  if (!lgl) {
+    print(str_c(nces_id, ": html"))
+    h <- read_html(x)
+    write_xml(h, str_c(today,"/", nces_id, ".xml"))
+  } else {
+    ext <- tools::file_ext(x)
+    print(str_c(nces_id, ": ", ext))
+    download.file(x, destfile = str_c(today, "/",nces_id, ".", ext))
+  }
 }
+```
 
-
-
+```{r}
+pmap(list(x = fin_data$link, lgl = contains_ext(fin_data$link), nces_id = fin_data$nces_id), possibly(scrape_me, NULL), today = "2020-03-30")
 ```
 
 ```{r}
@@ -189,7 +198,7 @@ tmm <- rename(last_model, latitude = LAT, longitude = LON)
 tmm <- tmm %>% filter(!is.na(latitude) & !is.na(longitude))
 
 mysf = st_as_sf(tmm, coords = c("longitude", "latitude"), 
-                 crs = 4326)
+                crs = 4326)
 
 US <- st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
 
