@@ -33,6 +33,7 @@ proc_data <- proc_data %>%
   mutate(present = if_else(corona | covid, TRUE, FALSE))
 
 o <- pull(proc_data, link)
+
 proc_data$n_links <- map_int(o, length)
 
 x <- proc_data %>% 
@@ -43,6 +44,7 @@ x <- proc_data %>%
 proc_data$state <- map_chr(x, ~.[[1]]) %>% tolower() %>% tools::toTitleCase()
 
 out_data <- proc_data %>% 
+  filter(!is.na(state)) %>% 
   janitor::tabyl(state, present) %>% 
   rename(not_present = `FALSE`,
          present = `TRUE`) %>% 
@@ -97,7 +99,8 @@ tm <- tm %>%
   select(nces_id = `nces-id`,
          base_url = `website-url`)
 
-fin_data <- fin_data %>% 
+# this is the data with the links
+fin_data <- fin_data %>%
   left_join(tm) %>% 
   unnest(link) %>% 
   mutate(link = str_c(base_url, link)) %>% 
@@ -107,7 +110,6 @@ sum_links <- fin_data %>%
   filter(!is.na(link)) %>% 
   group_by(nces_id) %>% 
   summarize(links = toString(link))
-
 ```
 
 ```{r}
@@ -119,22 +121,37 @@ contains_ext <- function(x) {
 my_lgl <- fin_data$link %>% 
   map_lgl(contains_ext)
 
-scrape_me <- function(x, lgl, nces_id, today) {
+scrape_me <- function(x, lgl, nces_id, today, row_num) {
   
   if (!lgl) {
-    print(str_c(nces_id, ": html"))
+    print(str_c(nces_id, "-", row_num, ": html"))
     h <- read_html(x)
-    write_xml(h, str_c(today,"/", nces_id, ".xml"))
+    my_dest <- str_c(today, "/", nces_id, "-", row_num, ".xml")
+    write_xml(h, my_dest)
   } else {
+    print(str_c(nces_id, "-", row_num, " : ", ext))
     ext <- tools::file_ext(x)
-    print(str_c(nces_id, ": ", ext))
-    download.file(x, destfile = str_c(today, "/",nces_id, ".", ext))
+    my_dest <- str_c(today, "/", nces_id, "-", row_num, ".", ext)
+    download.file(x, destfile = my_dest)
   }
 }
 ```
 
 ```{r}
-pmap(list(x = fin_data$link, lgl = contains_ext(fin_data$link), nces_id = fin_data$nces_id), possibly(scrape_me, NULL), today = "2020-03-30")
+fin_data
+l %>% 
+  map(down)
+```
+
+```{r}
+fin_data$row_num <- 1:nrow(fin_data)
+
+pmap(list(x = fin_data$link, 
+          lgl = contains_ext(fin_data$link), 
+          nces_id = fin_data$nces_id,
+          row_num = fin_data$row_num), possibly(scrape_me, NULL), today = "2020-03-30")
+
+
 ```
 
 ```{r}
